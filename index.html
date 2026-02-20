@@ -1,21 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo List - Riri</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Todo List</title>
 
-    <link rel="stylesheet" href="css\style.css">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    
-<header></header>
 
-<main></main>
+<body class="bg-gradient-to-br from-indigo-900 via-blue-900 to-slate-900 min-h-screen flex items-center justify-center">
 
-<footer></footer>
+<div class="bg-white w-[420px] rounded-2xl shadow-2xl p-6">
+
+<!-- Title -->
+<h1 class="text-2xl font-bold text-center mb-4 text-gray-800">
+Todo List
+</h1>
+
+<!-- FORM -->
+<form id="todo-form" class="flex gap-2 mb-4">
+
+<input
+id="todo-input"
+type="text"
+placeholder="Enter todo"
+class="border rounded-lg p-2 w-full focus:ring-2 focus:ring-blue-400 outline-none"
+/>
+
+<input
+id="todo-date"
+type="date"
+class="border rounded-lg p-2 focus:ring-2 focus:ring-blue-400 outline-none"
+/>
+
+<button
+type="submit"
+class="bg-blue-500 hover:bg-blue-600 text-white px-4 rounded-lg transition"
+>
+Add
+</button>
+
+</form>
+
+<!-- ACTION BUTTON -->
+<div class="flex justify-between mb-4">
+
+<button
+id="clear-btn"
+class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg transition"
+>
+Clear All
+</button>
+
+<button
+id="filter-btn"
+class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg transition"
+>
+Filter Today+
+</button>
+
+</div>
+
+<!-- LIST -->
+<ul id="todo-list" class="space-y-2">
+
+<li class="text-gray-400 text-center">
+No todos available
+</li>
+
+</ul>
+
+<footer class="text-center text-gray-400 text-xs pt-2 border-t">
+© 2026 Todo List App. All rights reserved.
+</footer>
+
+</div>
+
 
 
 <script src="js/script.js"></script>
+
 </body>
 </html>
