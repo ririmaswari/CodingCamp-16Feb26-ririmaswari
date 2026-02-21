@@ -24,7 +24,7 @@ form.addEventListener('submit', function(e){
 
     todos.push(newTodo);
 
-    // INI YANG KAMU CARI
+   
     console.log("TODOS:", todos);
 
     input.value = '';
